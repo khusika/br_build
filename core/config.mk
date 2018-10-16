@@ -716,7 +716,7 @@ else
 MD5SUM:=md5sum
 endif
 
-DR_SCRIPT := vendor/dark/dr.sh
+BR_SCRIPT := vendor/batik/br.sh
 BASH := bash
 
 APICHECK_CLASSPATH_ENTRIES := \
