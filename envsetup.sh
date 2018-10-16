@@ -654,12 +654,16 @@ function lunch()
     fi
     export CUSTOM_BUILD
 
-    export DR_OFFICIAL_CH=$(get_build_var DR_OFFICIAL)
+    export BR_OFFICIAL_CH=$(get_build_var BR_OFFICIAL)
     export TARGET_PRODUCT=$product
     export TARGET_BUILD_VARIANT=$variant
     export TARGET_PLATFORM_VERSION=$(get_build_var TARGET_PLATFORM_VERSION)
     export TARGET_BUILD_TYPE=release
     export TARGET_ARCH=$(get_build_var TARGET_ARCH)
+
+ if [ -z "$BR_MAINTAINER" ]; then
+   export BR_MAINTAINER="ZHANtech™" # Maintainer
+fi
 
     echo
 
