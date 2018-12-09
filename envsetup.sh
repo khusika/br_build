@@ -662,7 +662,7 @@ function lunch()
     export TARGET_ARCH=$(get_build_var TARGET_ARCH)
 
  if [ -z "$BR_MAINTAINER" ]; then
-   export BR_MAINTAINER="ZHANtech™" # Maintainer
+   export BR_MAINTAINER=$(get_build_var BR_MAINTAINER)
 fi
 
     echo
